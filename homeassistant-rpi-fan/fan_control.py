@@ -1,8 +1,7 @@
 import RPi.GPIO as GPIO
-import time
 from flask import Flask, request, jsonify
 
-FAN_PIN = 18  # GPIO-pin för fläkten
+FAN_PIN = 18
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(FAN_PIN, GPIO.OUT)
