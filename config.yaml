@@ -1,0 +1,17 @@
+name: "Raspberry Pi Fan Control"
+version: "1.0"
+slug: "rpi_fan_control"
+description: "Control Raspberry Pi 5 Fan via Home Assistant"
+startup: "services"
+boot: "auto"
+hassio_api: true
+hassio_role: "admin"
+arch:
+  - "aarch64"
+  - "armv7"
+options:
+  fan_gpio: 18
+schema:
+  fan_gpio: "int"
+ports:
+  5000/tcp: 5000
